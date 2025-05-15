@@ -218,13 +218,20 @@
   {
   "id": "video-banner",
   "fields": [
-    {
-      "component": "text", 
-      "valueType": "string",
-      "name": "video",
-      "label": "Video URL",
-      "multi": false
-    }
-  ]
+      {
+        "component": "text", 
+        "valueType": "string",
+        "name": "video",
+        "label": "Video URL",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "customClass",
+        "label": "Custom CSS Class",
+        "description": "Add additional classes (e.g., 'full-width dark-theme')"
+      }
+    ]
   }
 ]
+
