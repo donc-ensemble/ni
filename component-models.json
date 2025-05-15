@@ -216,15 +216,15 @@
     ]
   },
   {
-    "id": "video-banner",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "video",
-        "label": "Video",
-        "multi": false
-      }
-    ]
-  }
+  "id": "video-banner",
+  "fields": [
+    {
+      "component": "text", 
+      "valueType": "string",
+      "name": "video",
+      "label": "Video URL",
+      "multi": false
+    }
+  ]
+}
 ]
