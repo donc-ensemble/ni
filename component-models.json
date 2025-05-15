@@ -221,30 +221,9 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "video (desktop)",
-        "label": "Video (Desktop)",
+        "name": "video",
+        "label": "Video",
         "multi": false
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "video (mobile)",
-        "label": "Video (Mobile)",
-        "multi": false
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Logo Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Logo Image Alt",
-        "value": ""
       }
     ]
   }
