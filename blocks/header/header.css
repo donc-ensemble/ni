@@ -184,7 +184,7 @@ header nav .nav-sections ul > li > ul > li {
 
 #nav > div.section.nav-brand > div > picture > img {
     height: auto;
-    width: 60px;
+	width: clamp(40px, 5vw, 60px);
 }
 
 @media (width >= 900px) {
@@ -317,4 +317,5 @@ header nav .nav-tools .default-content-wrapper p .icon {
   header nav .nav-tools .default-content-wrapper > *:not(:nth-last-child(-n+2)) {
     display: none !important;
   }
+
 }
