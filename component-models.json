@@ -214,5 +214,38 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "video-banner",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video (desktop)",
+        "label": "Video (Desktop)",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video (mobile)",
+        "label": "Video (Mobile)",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Logo Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Logo Image Alt",
+        "value": ""
+      }
+    ]
   }
 ]
