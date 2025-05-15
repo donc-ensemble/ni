@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p151553-e1560212.adobeaemcloud.com/bin/franklin.delivery/donc-ensemble/ni/main" #rde
+    url: "https://author-p151553-e1566560.adobeaemcloud.com/bin/franklin.delivery/donc-ensemble/ni/main" #prod
     type: "markup"
     suffix: ".html"
