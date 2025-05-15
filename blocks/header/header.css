@@ -51,10 +51,6 @@ header nav p {
   margin: 0;
 }
 
-#nav > div.section.nav-brand > div > picture > img {
-    height: auto;
-    width: 60px;
-}
  
 header nav a:any-link {
   color: currentcolor;
@@ -186,6 +182,11 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+#nav > div.section.nav-brand > div > picture > img {
+    height: auto;
+    width: 60px;
+}
+
 @media (width >= 900px) {
   header nav .nav-sections {
     display: block;
@@ -294,7 +295,7 @@ header nav .nav-tools .default-content-wrapper p .icon {
     width: 29px;
 }
 
-@media (max-width: 899px) {
+@media (width <= 899px) {
   /* Shrink brand image */
   header .nav-brand img {
     width: 40px;
