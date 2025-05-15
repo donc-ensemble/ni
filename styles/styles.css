@@ -38,6 +38,7 @@
 
   /* nav height */
   --nav-height: 64px;
+  --nav-font-family: founders-grotesk, arial, sans-serif;
 }
 
 /* fallback fonts */
