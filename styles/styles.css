@@ -9,6 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   /* colors */
@@ -21,7 +22,7 @@
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: financier-display, arial, sans-serif;
   --founders-grotesk: founders-grotesk, arial, sans-serif;
   --financier-display: financier-display, arial, sans-serif;
 
@@ -132,6 +133,7 @@ pre,
 blockquote {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+  font-family: var(--founders-grotesk);
 }
 
 code,
@@ -221,8 +223,8 @@ button.primary {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  border: 1px solid currentcolor;
+  color: #009b63;
 }
 
 main img {
