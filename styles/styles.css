@@ -223,8 +223,8 @@ button.primary {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  border: 1px solid currentcolor;
+  color: #009b63;
 }
 
 main img {
