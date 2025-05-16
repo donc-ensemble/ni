@@ -170,6 +170,7 @@ header nav .nav-sections ul {
 
 header nav .nav-sections ul > li {
   font-weight: 500;
+  cursor: pointer;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -286,6 +287,7 @@ header nav .nav-tools .default-content-wrapper .icon-canada img[data-icon-name="
 
 header nav .nav-tools .default-content-wrapper p {
     display: flex;
+    cursor: pointer;
 }
 
 header nav .nav-tools .default-content-wrapper p .icon {
