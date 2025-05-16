@@ -149,11 +149,42 @@
     "id": "card",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
+        "component": "text",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
       },
       {
         "component": "richtext",
@@ -163,43 +194,12 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "name": "title",
-        "value": "",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-      "component": "select",
-      "name": "titleType",
-      "label": "Title Type",
-      "options": [
-        {
-          "name": "h1",
-          "value": "h1"
-        },
-        {
-          "name": "h2",
-          "value": "h2"
-        },
-        {
-          "name": "h3",
-          "value": "h3"
-        },
-        {
-          "name": "h4",
-          "value": "h4"
-        },
-        {
-          "name": "h5",
-          "value": "h5"
-        },
-        {
-          "name": "h6",
-          "value": "h6"
-        }
-      ]
-    }
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      }
     ]
   },
   {
@@ -258,10 +258,10 @@
     ]
   },
   {
-  "id": "video-banner",
-  "fields": [
+    "id": "video-banner",
+    "fields": [
       {
-        "component": "text", 
+        "component": "text",
         "valueType": "string",
         "name": "video",
         "label": "Video URL",
@@ -270,4 +270,3 @@
     ]
   }
 ]
-
