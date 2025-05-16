@@ -163,7 +163,7 @@
         "valueType": "string"
       },
       {
-        "component": "title",
+        "component": "text",
         "name": "title",
         "value": "",
         "label": "title",
