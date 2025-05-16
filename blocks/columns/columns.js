@@ -17,7 +17,7 @@ export default function decorate(block) {
 
       // Scene7 URL handling - now using <img>
       const links = col.querySelectorAll('a[href*="scene7.com"]');
-      links.forEach(link => {
+      links.forEach((link) => {
         const url = link.href;
         const container = document.createElement('div');
         container.classList.add('scene7-container');
