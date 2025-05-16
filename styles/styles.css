@@ -15,7 +15,7 @@
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: #333333;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
@@ -174,7 +174,7 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: 8px;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
@@ -188,6 +188,13 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+    font-family: founders-grotesk;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px 28px;
+    position: relative;
+    text-transform: none;
 }
 
 a.button:hover,
@@ -202,6 +209,13 @@ button:disabled,
 button:disabled:hover {
   background-color: var(--light-color);
   cursor: unset;
+}
+
+a.button.primary,
+button.primary {
+    background-color: #009b63;
+    border: none;
+    color: #f6f6f6!important;
 }
 
 a.button.secondary,
