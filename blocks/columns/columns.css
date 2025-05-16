@@ -25,14 +25,14 @@
 }
 
 .columns > div:nth-child(1) div h1 {
-    font-family: financier-display;
+    font-family: var(--financier-display);
     font-size: clamp(40px, 5vw, 72px);
     font-weight: 400;
     margin: 0;
 }
 
 .columns > div:nth-child(1) div h1 + p{ 
-    font-family: founders-grotesk;
+    font-family: var(--founders-grotesk);
     font-size: 18px;
 }
 

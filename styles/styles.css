@@ -15,13 +15,15 @@
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #333333;
+  --text-color: #333;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --founders-grotesk: founders-grotesk, arial, sans-serif;
+  --financier-display: financier-display, arial, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -39,6 +41,8 @@
   /* nav height */
   --nav-height: 64px;
   --nav-font-family: founders-grotesk, arial, sans-serif;
+
+
 }
 
 /* fallback fonts */
@@ -175,11 +179,8 @@ button {
   margin: 12px 0;
   border: 2px solid transparent;
   border-radius: 8px;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
   font-style: normal;
   font-weight: 500;
-  line-height: 1.25;
   text-align: center;
   text-decoration: none;
   background-color: var(--link-color);
@@ -188,8 +189,7 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
-    font-family: founders-grotesk;
+    font-family: var(--founders-grotesk);
     font-size: 18px;
     line-height: 18px;
     padding: 15px 28px;
