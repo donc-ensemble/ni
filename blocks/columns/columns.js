@@ -21,7 +21,7 @@ export default function decorate(block) {
         const url = link.href;
         const container = document.createElement('div');
         container.classList.add('scene7-container');
-        
+
         // Direct image embed with size parameters
         const optimizedUrl = `${url.split('?')[0]}?fit=constrain&wid=1200&hei=630`;
         container.innerHTML = `
