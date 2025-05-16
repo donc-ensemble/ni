@@ -42,3 +42,12 @@
   font-display: swap;
   src: url('../fonts/founders-grotesk-regular.otf') format('opentype');
 }
+
+@font-face {
+  font-family: financier-display;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/financier-display-regular.otf') format('opentype');
+}
+
