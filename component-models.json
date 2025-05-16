@@ -136,6 +136,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Upcoming Event",
+            "value": "upcoming-event"
           }
         ]
       }

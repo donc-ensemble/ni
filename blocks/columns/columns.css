@@ -24,21 +24,16 @@
   border: 1px solid red;
 }
 
-/* .columns > div:nth-child(1) {
-    margin: 5rem auto 0;
-    padding: 0 2rem;
-} */
-
 .columns > div:nth-child(1) div h1 {
-    font-family: var(--financier-display);
     font-size: clamp(40px, 5vw, 72px);
     font-weight: 400;
     margin: 0;
 }
 
 
+
+
 .columns > div:nth-child(1) div h1 + p + p{ 
-    font-family: var(--founders-grotesk);
     font-size: 18px;
 }
 

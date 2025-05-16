@@ -21,7 +21,7 @@
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: financier-display, arial, sans-serif;
   --founders-grotesk: founders-grotesk, arial, sans-serif;
   --financier-display: financier-display, arial, sans-serif;
 
@@ -132,6 +132,7 @@ pre,
 blockquote {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+  font-family: var(--founders-grotesk);
 }
 
 code,
