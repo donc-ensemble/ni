@@ -268,5 +268,106 @@
         "multi": false
       }
     ]
-  }
+  },
+  {
+  "id": "featured-product",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "carouselTitle",
+      "label": "Carousel Title",
+      "description": "Main title displayed above the carousel"
+    },
+    {
+      "component": "select",
+      "name": "titleType",
+      "label": "Title Type",
+      "options": [
+        {
+          "name": "h2",
+          "value": "h2"
+        },
+        {
+          "name": "h3",
+          "value": "h3"
+        }
+      ],
+      "value": "h2"
+    },
+    {
+      "component": "text",
+      "valueType": "number",
+      "name": "columns",
+      "label": "Columns",
+      "description": "Number of cards to display per slide",
+      "value": "3"
+    },
+    {
+      "component": "checkbox",
+      "name": "autoplay",
+      "label": "Enable Autoplay",
+      "description": "Automatically advance slides"
+    },
+    {
+      "component": "text",
+      "valueType": "number",
+      "name": "autoplaySpeed",
+      "label": "Autoplay Speed (ms)",
+      "description": "Time between slide transitions (in milliseconds)",
+      "value": "5000"
+    },
+    {
+      "component": "select",
+      "name": "navigationStyle",
+      "label": "Navigation Style",
+      "options": [
+        {
+          "name": "Arrows",
+          "value": "arrows"
+        },
+        {
+          "name": "Dots",
+          "value": "dots"
+        },
+        {
+          "name": "Arrows and Dots",
+          "value": "both"
+        },
+        {
+          "name": "None",
+          "value": "none"
+        }
+      ],
+      "value": "arrows"
+    },
+    {
+      "component": "container",
+      "name": "cards",
+      "label": "Product Cards",
+      "allowedComponents": ["card"],
+      "description": "Add card components to display in the carousel"
+    },
+    {
+      "component": "checkbox",
+      "name": "equalHeightCards",
+      "label": "Equal Height Cards",
+      "description": "Make all cards in the carousel the same height",
+      "value": true
+    },
+    {
+      "component": "aem-content",
+      "name": "viewAllLink",
+      "label": "View All Link",
+      "description": "Optional link for 'View All Products' button"
+    },
+    {
+      "component": "text",
+      "name": "viewAllText",
+      "label": "View All Text",
+      "description": "Text for the View All button",
+      "value": "View All Products"
+    }
+  ]
+}
 ]
