@@ -114,6 +114,10 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "show-more",
+            "value": "show-more"
           }
         ]
       }
@@ -248,18 +252,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "video-banner",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "video",
-        "label": "Video URL",
-        "multi": false
       }
     ]
   }
