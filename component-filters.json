@@ -41,5 +41,11 @@
       "title",
       "video-banner"
     ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "card"
+    ]
   }
 ]
