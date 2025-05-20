@@ -73,8 +73,11 @@
 	}
 }
 
-
-/* @media (width>= 768px) {
-   
-
-} */
+.show-more {
+	color: #000;
+	line-height: 1.33;
+	cursor: pointer;
+	padding: 0;
+	text-align: center;
+	margin: 64px 0 124px;
+}

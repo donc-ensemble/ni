@@ -114,10 +114,6 @@
           {
             "name": "secondary",
             "value": "secondary"
-          },
-          {
-            "name": "show-more",
-            "value": "show-more"
           }
         ]
       }
