@@ -36,6 +36,11 @@
       "id": "card",
       "fields": [
         {
+          "component": "text",
+          "name": "title",
+          "label": "Title"
+        },
+        {
           "component": "reference",
           "valueType": "string",
           "name": "image",

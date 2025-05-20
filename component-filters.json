@@ -15,9 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "video-banner",
-      "featured-products"
+      "fragment"
     ]
   },
   {
@@ -39,12 +37,6 @@
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id": "featured-products",
-    "components": [
-      "card"
     ]
   }
 ]
