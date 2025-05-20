@@ -42,7 +42,7 @@
   {
     "id": "featured-products",
     "components": [
-      "card"
+      "cards"
     ]
   }
 ]

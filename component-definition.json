@@ -133,11 +133,10 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/block/v1/block/featured-products",
                 "template": {
                   "name": "Featured Products",
-                  "filter": "featured-products",
-                  "allowedComponents": ["card"]
+                  "filter": "featured-products"
                 }
               }
             }
