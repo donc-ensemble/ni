@@ -268,5 +268,52 @@
         "multi": false
       }
     ]
-  }
+  },
+  {
+  "id": "featured-product",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "number",
+      "name": "columns",
+      "label": "Columns",
+      "description": "Number of cards to display per slide",
+      "value": "3"
+    },
+    {
+      "component": "multifield",
+      "name": "cards",
+      "label": "Product Cards",
+      "items": {
+        "fields": [
+          {
+            "component": "text",
+            "name": "title",
+            "label": "Card Title",
+            "description": "Main heading for the card"
+          },
+          {
+            "component": "richtext",
+            "name": "text",
+            "label": "Card Text",
+            "description": "Paragraph text for the card"
+          },
+          {
+            "component": "reference",
+            "name": "image",
+            "label": "Card Image",
+            "description": "Image for the card",
+            "multi": false
+          },
+          {
+            "component": "text",
+            "name": "imageAlt",
+            "label": "Image Alt Text",
+            "description": "Alternative text for the image"
+          }
+        ]
+      }
+    }
+  ]
+}
 ]
