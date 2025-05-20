@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "video-banner"
+      "video-banner",
+      "featured-products"
     ]
   },
   {
@@ -43,7 +44,7 @@
     ]
   },
   {
-    "id": "carousel",
+    "id": "featured-products",
     "components": [
       "card"
     ]
