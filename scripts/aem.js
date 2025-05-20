@@ -435,15 +435,6 @@ function decorateButtons(element) {
           a.className = 'button secondary';
           twoup.classList.add('button-container');
         }
-        if (
-          up.childNodes.length === 1
-          && up.tagName === 'EM'
-          && twoup.childNodes.length === 1
-          && twoup.tagName === 'P'
-        ) {
-          a.className = 'button show-more';
-          twoup.classList.add('button-container');
-        }
       }
     }
   });
