@@ -33,6 +33,14 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Upcoming Event",
+              "value": "upcoming-event"
+            },
+            {
+              "name": "Test and Measurement",
+              "value": "test-and-measurement"
             }
           ]
         }
