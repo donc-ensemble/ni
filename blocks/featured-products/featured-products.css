@@ -114,7 +114,7 @@
 
     .featured-products-wrapper {
         position: relative;
-        padding-bottom: 60px; /* Add space for arrows at bottom */
+        padding-bottom: 60px;
         padding-right: 0 !important;
     }
 
@@ -127,31 +127,39 @@
         -webkit-overflow-scrolling: touch;
         gap: 20px;
         padding-bottom: 20px;
+        scrollbar-width: none;
+        
+        /* Hide scrollbar for IE/Edge */
+        -ms-overflow-style: none;
+    }
+
+    /* Hide scrollbar for Chrome/Safari */
+    .featured-products.block::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+        background: transparent;
     }
 
     .featured-products.block > div {
-        flex: 0 0 calc(40% - 10px); /* Show 2.5 items initially */
+        flex: 0 0 calc(40% - 10px); 
         scroll-snap-align: start;
-        display: flex !important; /* Ensure all items are visible regardless of expanded state */
+        display: flex !important; 
     }
 
     /* Navigation arrows container */
     .carousel-navigation {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
         transform: translateX(-50%);
         display: flex;
-        gap: 20px;
+        gap: 10px;
         justify-content: center;
-        margin-top: 30px;
+        padding-left: 7rem;
     }
 
     .carousel-btn {
-        background: #006b46;
-        color: white;
-        border: none;
-        border-radius: 50%;
+        background: transparent;
+        color: #03b585;
+        border: 0.7px solid #044123;
         width: 40px;
         height: 40px;
         display: flex;
@@ -159,11 +167,33 @@
         justify-content: center;
         font-size: 1.5rem;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
+        padding: 0;
     }
 
     .carousel-btn:hover {
-        background: #044123;
+        background-color: #03b585;
+        color: white;
+    }
+
+    .carousel-btn:active {
+        transform: scale(0.8);
+        background: transparent; 
+        color: #03b585; 
+    }
+
+    .carousel-btn:focus {
+        background-color: unset;
+        color: #03b585;
+    }
+
+
+    .carousel-btn.prev {
+        border-radius: 10px 0 10px 15px;
+    }
+
+    .carousel-btn.next {
+        border-radius: 0 10px 10px 15px;
     }
 
     .carousel-btn.prev::before {
@@ -174,9 +204,8 @@
         content: "→";
     }
 
-    /* Hide the show more button in this viewport */
     .show-more {
-        display: none !important; /* Force hide in carousel view */
+        display: none !important;
     }
 }
 
