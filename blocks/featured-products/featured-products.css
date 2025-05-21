@@ -1,6 +1,6 @@
 .featured-products-container {
     /* padding: 0 2rem; */
-    margin-bottom: 80px;
+    margin-bottom: 80px !important;
 }
 
 .featured-products-container #featured-products {
