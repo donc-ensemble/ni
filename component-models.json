@@ -140,6 +140,10 @@
           {
             "name": "Upcoming Event",
             "value": "upcoming-event"
+          },
+          {
+            "name": "Test and Measurement",
+            "value": "test-and-measurement"
           }
         ]
       }
@@ -149,11 +153,40 @@
     "id": "card",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
       },
       {
         "component": "richtext",
@@ -161,6 +194,13 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
       }
     ]
   },
@@ -218,18 +258,5 @@
         "valueType": "string"
       }
     ]
-  },
-  {
-  "id": "video-banner",
-  "fields": [
-      {
-        "component": "text", 
-        "valueType": "string",
-        "name": "video",
-        "label": "Video URL",
-        "multi": false
-      }
-    ]
   }
 ]
-
