@@ -21,7 +21,7 @@
 }
 
 .featured-products.block > div {
-    color: #044123;
+    color: var(--forrest-green);
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
@@ -159,7 +159,7 @@
     .carousel-btn {
         background: transparent;
         color: #03b585;
-        border: 0.7px solid #044123;
+        border: 0.7px solid var(--forrest-green);
         width: 40px;
         height: 40px;
         display: flex;
