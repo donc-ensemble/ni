@@ -4,6 +4,10 @@ footer {
     box-sizing: border-box;
 }
 
+footer a {
+    color: #32eb96 !important; 
+}
+
 footer .block {
     max-width: 1440px;
     margin: auto;
@@ -87,6 +91,7 @@ footer .footer-top .social-links a {
 
 footer .footer-bottom .legal a {
     display: flex;
+    color: #32eb96;
 }
 
 footer .footer-top .social-links a:last-child {
@@ -116,6 +121,7 @@ footer .footer-bottom .gateway-legal {
 footer .footer-bottom .global-gateway {
     order: 2;
     text-transform: capitalize;
+    color: #32eb96;
 }
 
 footer .footer-bottom .global-gateway-icon {
@@ -126,6 +132,7 @@ footer .footer-bottom .legal {
     order: 1;
     display: flex;
     margin: 0 25px 0 0;
+    font-size: 12px !important;
 }
 
 
