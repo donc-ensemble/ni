@@ -53,7 +53,7 @@
     background-color: #8ad0c9;
 }
 
-.featured-products.block > div > div:nth-child(3) {
+.featured-products.block > div > div:nth-child(4) {
     text-align: right;
     margin-top: auto;
 }
@@ -225,4 +225,15 @@
     .show-more {
         display: none;
     }
+}
+
+
+/* Styles for hidden link container */
+.hidden-link-container {
+    display: none !important; /* Use !important to ensure it overrides other styles */
+}
+
+/* Styles for clickable cards */
+.clickable-card {
+    cursor: pointer;
 }
