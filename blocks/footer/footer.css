@@ -1,5 +1,5 @@
 footer {
-    background-color: #044123;
+    background-color: var(--forrest-green);
     font-family: var(--founders-grotesk); /* Default footer font */
     box-sizing: border-box;
 }

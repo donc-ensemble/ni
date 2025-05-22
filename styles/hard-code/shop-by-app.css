@@ -4,7 +4,7 @@
     margin-top: 64px;
     margin-bottom: clamp(38px, 63px, 93px);
     font-size: clamp(30px, 40px, 40px);
-    color: #044123;
+    color: var(--forrest-green);
     font-weight: 400;
 }
 
@@ -47,7 +47,7 @@
 .ts-tab {
     padding: 15px 0;
     font-size: 22px;
-    color: #044123;
+    color: var(--forrest-green);
     cursor: pointer;
     position: relative;
     flex-shrink: 0;
@@ -57,7 +57,7 @@
 }
 
 .ts-tab.active {
-    color: #044123;
+    color: var(--forrest-green);
     font-weight: 500;
 }
 
@@ -147,7 +147,7 @@
     background: #f5f5f5; 
     cursor: pointer;
     background-color: transparent !important;
-    color: #044123 !important;
+    color: var(--forrest-green) !important;
     font-weight: 500;
     border-radius: 15px 10px 10px 0;
     border: 1px solid #03b585 !important;
