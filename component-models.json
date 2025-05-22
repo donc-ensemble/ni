@@ -270,5 +270,9 @@
         "multi": false
       }
     ]
+  },
+    {
+  "id": "media-info",
+  "fields": []
   }
 ]
