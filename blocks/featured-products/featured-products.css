@@ -226,3 +226,14 @@
         display: none;
     }
 }
+
+
+/* Styles for hidden link container */
+.hidden-link-container {
+    display: none !important; /* Use !important to ensure it overrides other styles */
+}
+
+/* Styles for clickable cards */
+.clickable-card {
+    cursor: pointer;
+}
