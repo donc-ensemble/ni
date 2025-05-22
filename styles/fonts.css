@@ -44,6 +44,14 @@
 }
 
 @font-face {
+  font-family: founders-grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/founders-grotesk-medium.otf') format('opentype');
+}
+
+@font-face {
   font-family: financier-display;
   font-style: normal;
   font-weight: 400;
