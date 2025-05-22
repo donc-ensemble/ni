@@ -84,7 +84,7 @@ export default async function decorate(block) {
                     <a id="preferences" class="ot-sdk-show-settings" href="javascript:void(0)">Manage cookies</a>
                 </div>
                 </div>
-                <div class="allRights"> © <span class="copyright">2025</span> NATIONAL INSTRUMENTS CORP. ALL RIGHTS RESERVED.</div>
+                <div class="all-rights"> © <span class="copyright">2025</span> NATIONAL INSTRUMENTS CORP. ALL RIGHTS RESERVED.</div>
                 <div class="contact-number"><a href="tel:+1 800 433 3488">+1 800 433 3488</a></div>`;
 
   footer.append(footerTop, footerBottom);
