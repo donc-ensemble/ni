@@ -123,13 +123,12 @@
 .ts-list-item {
     padding: 8px 0;
     border-bottom: 1px solid #e0e0e0;
-    color: #006b46;
     font-size: 18px;
     transition: color 0.2s;
 }
 
-.ts-list-item:last-child {
-    border-bottom: none;
+.ts-list-item a {
+    color: #006b46 !important;
 }
 
 .ts-list-item:hover {

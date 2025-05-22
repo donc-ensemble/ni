@@ -21,36 +21,37 @@ if (container) {
             <div class="ts-columns-container">
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Multifunction I/O</li>
-                        <li class="ts-list-item">Voltage</li>
-                        <li class="ts-list-item">Current</li>
-                        <li class="ts-list-item">Digital I/O</li>
-                        <li class="ts-list-item">Counters and Timers</li>
-                        <li class="ts-list-item">Packaged Controllers</li>
-                        <li class="ts-list-item">Industrial Communication Buses</li>
-                        <li class="ts-list-item">Vehicle Communication Buses</li>
-                        <li class="ts-list-item">Avionics Communication Buses</li>
-                        <li class="ts-list-item">Temperature</li>
-                        <li class="ts-list-item">Sound and Vibration</li>
-                        <li class="ts-list-item">Strain, Pressure, and Force</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/multifunction-io.html">Multifunction I/O</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/voltage.html">Voltage</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/current.html">Current</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/digital-io.html">Digital I/O</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/counters-and-timers.html">Counters and Timers</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/packaged-controllers.html">Packaged Controllers</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/industrial-communication-buses.html">Industrial Communication Buses</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/vehicle-communication-buses.html">Vehicle Communication Buses</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/avionics-communication-buses.html">Avionics Communication Buses</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/temperature.html">Temperature</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/sound-and-vibration.html">Sound and Vibration</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/strain-pressure-and-force.html">Strain, Pressure, and Force</a></li>
+
                     </ul>
                 </div>
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Position Displacement</li>
-                        <li class="ts-list-item">Machine Vision</li>
-                        <li class="ts-list-item">Board-Level Controllers</li>
-                        <li class="ts-list-item">HMIs and Displays</li>
-                        <li class="ts-list-item">Signal Conditioning</li>
-                        <li class="ts-list-item">Programming Environments for Data Acquisition and Control</li>
-                        <li class="ts-list-item">Control & Software Suites for Data Acquisition and Control</li>
-                        <li class="ts-list-item">Application Software for Data Acquisition and Control</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/position-displacement.html">Position Displacement</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/machine-vision.html">Machine Vision</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/board-level-controllers.html">Board-Level Controllers</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/hmis-and-displays.html">HMIs and Displays</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/signal-conditioning.html">Signal Conditioning</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/programming-environments.html">Programming Environments for Data Acquisition and Control</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/software-suites.html">Control & Software Suites for Data Acquisition and Control</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/application-software-for-data-acquisition-and-control.html">Application Software for Data Acquisition and Control</a></li>
                     </ul>
                 </div>
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Add-Ons for Data Acquisition and Control</li>
-                        <li class="ts-list-item">SystemLink™ Software</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/support/downloads/tools-network.html">Add-Ons for Data Acquisition and Control</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html">SystemLink™ Software</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,26 +64,26 @@ if (container) {
             <div class="ts-columns-container">
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Oscilloscopes</li>
-                        <li class="ts-list-item">Digital Instruments</li>
-                        <li class="ts-list-item">Frequency Counters</li>
-                        <li class="ts-list-item">Power Supplies and Loads</li>
-                        <li class="ts-list-item">Switches</li>
-                        <li class="ts-list-item">GPIB, Serial, and Ethernet</li>
-                        <li class="ts-list-item">Digital Multimeters</li>
-                        <li class="ts-list-item">Waveform Generators</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/oscilloscopes-and-digitizers.html">Oscilloscopes</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/digital-instruments.html">Digital Instruments</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/frequency-counters.html">Frequency Counters</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/power-supplies-and-loads.html">Power Supplies and Loads</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/switches.html">Switches</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/gpib-serial-and-ethernet.html">GPIB, Serial, and Ethernet</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/digital-multimeters.html">Digital Multimeters</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/waveform-generators.html">Waveform Generators</a></li>
                     </ul>
                 </div>
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Source Measure Units and LCR Meters</li>
-                        <li class="ts-list-item">FlexRIO Custom Instruments and Processing</li>
-                        <li class="ts-list-item">Programming Environments for Electronic Test and Instrumentation</li>
-                        <li class="ts-list-item">Software Suites for Electronic Test and Instrumentation</li>
-                        <li class="ts-list-item">Application Software for Electronic Test and Instrumentation</li>
-                        <li class="ts-list-item">Add-Ons for Electronic Test and Instrumentation</li>
-                        <li class="ts-list-item">Semiconductor Test System</li>
-                        <li class="ts-list-item">SystemLink™ Software</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/source-measure-units-and-lcr-meters.html">Source Measure Units and LCR Meters</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/flexrio-custom-instruments-and-processing.html">FlexRIO Custom Instruments and Processing</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/programming-environments.html">Programming Environments for Electronic Test and Instrumentation</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/software-suites.html">Software Suites for Electronic Test and Instrumentation</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/application-software-for-electronic-test-and-instrumentation.html">Application Software for Electronic Test and Instrumentation</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/support/downloads/tools-network.html">Add-Ons for Electronic Test and Instrumentation</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/electronic-test-instrumentation/what-is-the-semiconductor-test-system.html">Semiconductor Test System</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html">SystemLink™ Software</a></li>
                     </ul>
                 </div>
             </div>
@@ -93,24 +94,23 @@ if (container) {
             <div class="ts-columns-container">
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Vector Signal Transceivers</li>
-                        <li class="ts-list-item">RF Signal Generators</li>
-                        <li class="ts-list-item">Software Defined Radios</li>
-                        <li class="ts-list-item">Network Analyzers</li>
-                        <li class="ts-list-item">Spectrum and Signal Analyzers</li>
-                        <li class="ts-list-item">RF and Microwave Switches</li>
-                        <li class="ts-list-item">Power Sensors</li>
-                        <li class="ts-list-item">RF Signal Conditioning</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/vector-signal-transceivers.html">Vector Signal Transceivers</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/rf-signal-generators.html">RF Signal Generators</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/software-defined-radios.html">Software Defined Radios</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/network-analyzers.html">Network Analyzers</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/spectrum-and-signal-analyzers.html">Spectrum and Signal Analyzers</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/rf-and-microwave-switches.html">RF and Microwave Switches</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/power-sensors.html">Power Sensors</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-us/shop/category/rf-signal-conditioning.html">RF Signal Conditioning</a></li>
                     </ul>
                 </div>
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Programming Environments for Wireless Design and Test</li>
-                        <li class="ts-list-item">Test & Software Suites for Wireless Design and Test</li>
-                        <li class="ts-list-item">Application Software for Wireless Design and Test</li>
-                        <li class="ts-list-item">Add-Ons for Wireless Design and Test</li>
-                        <li class="ts-list-item">Semiconductor Test System</li>
-                    </ul>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/programming-environments.html">Programming Environments for Wireless Design and Test</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/software-suites.html">Test & Software Suites for Wireless Design and Test</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/application-software-for-wireless-design-and-test.html">Application Software for Wireless Design and Test</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/support/downloads/tools-network.html">Add-Ons for Wireless Design and Test</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/electronic-test-instrumentation/what-is-the-semiconductor-test-system.html">Semiconductor Test System</a></li>
                 </div>
             </div>
             <button class="ts-see-more">See more</button>
@@ -120,9 +120,9 @@ if (container) {
             <div class="ts-columns-container">
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">SystemLink™</li>
-                        <li class="ts-list-item">TestStand</li>
-                        <li class="ts-list-item">DIAdem</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html">SystemLink™</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html">TestStand</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/data-acquisition-and-control/application-software-for-data-acquisition-and-control-category/what-is-diadem.html">DIAdem</a></li>
                     </ul>
                 </div>
             </div>
@@ -133,12 +133,12 @@ if (container) {
             <div class="ts-columns-container">
                 <div class="ts-column">
                     <ul class="ts-item-list arrow-list">
-                        <li class="ts-list-item">Portable Student Devices</li>
-                        <li class="ts-list-item">Radio Prototyping Hardware</li>
-                        <li class="ts-list-item">Engineering Lab Stations</li>
-                        <li class="ts-list-item">LabVIEW</li>
-                        <li class="ts-list-item">Academic Volume License</li>
-                        <li class="ts-list-item">Multisim Education Edition</li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/portable-student-devices.html">Portable Student Devices</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/radio-prototyping-hardware.html">Radio Prototyping Hardware</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/category/engineering-lab-stations.html">Engineering Lab Stations</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/product/labview.html">LabVIEW</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en/shop/academic-volume-license.html">Academic Volume License</a></li>
+                        <li class="ts-list-item"><a href="https://www.ni.com/en-ca/shop/product/multisim.html">Multisim Education Edition</a></li>
                     </ul>
                 </div>
             </div>
