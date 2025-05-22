@@ -10,6 +10,7 @@
  * governing permissions and limitations under the License.
  */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('./hard-code/shop-by-app.css');
 
 :root {
   /* colors */
@@ -119,11 +120,17 @@ h6 {
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
+
+h2 { 
+    font-size: var(--heading-font-size-xl);  
+    color: #044123;
+    font-weight: 400;
+}
 h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
+
 
 p,
 dl,
