@@ -44,9 +44,12 @@ export default async function decorate(block) {
         const prevBtn = document.createElement('button');
         prevBtn.className = 'carousel-btn prev';
         prevBtn.setAttribute('aria-label', 'Previous slide');
+        prevBtn.setAttribute('type', 'button');
+
         const nextBtn = document.createElement('button');
         nextBtn.className = 'carousel-btn next';
         nextBtn.setAttribute('aria-label', 'Next slide');
+        nextBtn.setAttribute('type', 'button');
 
         carouselNav.appendChild(prevBtn);
         carouselNav.appendChild(nextBtn);
@@ -66,6 +69,22 @@ export default async function decorate(block) {
             behavior: 'smooth',
           });
         });
+
+        // A11y: Add keyboard navigation for carousel
+        featuredProductsWrapper.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            prevBtn.click();
+          } else if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            nextBtn.click();
+          }
+        });
+
+        // A11y: Make carousel focusable
+        featuredProductsWrapper.setAttribute('tabindex', '0');
+        featuredProductsWrapper.setAttribute('role', 'region');
+        featuredProductsWrapper.setAttribute('aria-label', 'Featured Products Carousel');
       }
     } else {
       const carouselNav = container.querySelector('.carousel-navigation');
@@ -96,24 +115,41 @@ export default async function decorate(block) {
       showMoreParagraph.appendChild(symbolSpan);
       showMoreParagraph.classList.add('show-more');
 
+      // A11y: Add button role and keyboard support
+      showMoreParagraph.setAttribute('role', 'button');
+      showMoreParagraph.setAttribute('tabindex', '0');
+      showMoreParagraph.setAttribute('aria-expanded', 'false');
+
       isExpanded = false;
 
       applyDisplayState();
 
-      showMoreParagraph.addEventListener('click', () => {
+      const toggleShowMore = () => {
         isExpanded = !isExpanded;
 
         if (isExpanded) {
           symbolSpan.textContent = ' -';
           showMoreParagraph.textContent = 'Show less';
           showMoreParagraph.appendChild(symbolSpan);
+          showMoreParagraph.setAttribute('aria-expanded', 'true');
         } else {
           symbolSpan.textContent = ' +';
           showMoreParagraph.textContent = 'Show more';
           showMoreParagraph.appendChild(symbolSpan);
+          showMoreParagraph.setAttribute('aria-expanded', 'false');
         }
 
         applyDisplayState();
+      };
+
+      showMoreParagraph.addEventListener('click', toggleShowMore);
+
+      // A11y: Keyboard support for show more
+      showMoreParagraph.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleShowMore();
+        }
       });
     }
   }
@@ -121,11 +157,12 @@ export default async function decorate(block) {
   // --- START: Optimized JavaScript for href transformation ---
   const productCards = block.querySelectorAll(':scope > div');
 
-  productCards.forEach((card) => {
+  productCards.forEach((card, index) => {
     const anchorElement = card.querySelector('div > p > a[href]');
 
     if (anchorElement) {
       const url = anchorElement.href;
+      const linkText = anchorElement.textContent.trim();
       card.dataset.href = url;
 
       const divToHide = anchorElement.closest('div');
@@ -134,6 +171,29 @@ export default async function decorate(block) {
       }
 
       card.classList.add('clickable-card');
+
+      // A11y: Make card keyboard accessible
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-label', `Navigate to ${linkText || 'product page'}`);
+
+      // A11y: Keyboard navigation for cards
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          window.location.href = url;
+        }
+      });
+
+      // SEO: Add structured data attributes
+      card.setAttribute('data-product-url', url);
+      card.setAttribute('data-product-position', index + 1);
+
+      // SEO: Add title for better UX
+      const cardTitle = card.querySelector('h2');
+      if (cardTitle) {
+        card.setAttribute('title', `View ${cardTitle.textContent.trim()}`);
+      }
     }
   });
 
@@ -146,7 +206,64 @@ export default async function decorate(block) {
   });
   // --- END: Optimized JavaScript for href transformation ---
 
+  // A11y: Add semantic structure
+  if (featuredProductsWrapper) {
+    featuredProductsWrapper.setAttribute('role', 'region');
+    featuredProductsWrapper.setAttribute('aria-label', 'Featured Products');
+  }
+
+  // A11y: Add heading association
+  const mainHeading = container.querySelector('#featured-products');
+  if (mainHeading && featuredProductsWrapper) {
+    featuredProductsWrapper.setAttribute('aria-labelledby', 'featured-products');
+  }
+
   setupCarousel();
 
   window.addEventListener('resize', setupCarousel);
+
+  // SEO: Add structured data for products
+  const addStructuredData = () => {
+    if (document.querySelector('script[data-featured-products-schema]')) {
+      return; // Already added
+    }
+
+    const products = [];
+    productCards.forEach((card) => {
+      const title = card.querySelector('h2');
+      const description = card.querySelector('p:not(.show-more)');
+      const url = card.dataset.href;
+
+      if (title && url) {
+        products.push({
+          '@type': 'Product',
+          name: title.textContent.trim(),
+          description: description ? description.textContent.trim() : '',
+          url,
+        });
+      }
+    });
+
+    if (products.length > 0) {
+      const schema = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Featured Products',
+        itemListElement: products.map((product, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: product,
+        })),
+      };
+
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.setAttribute('data-featured-products-schema', 'true');
+      script.textContent = JSON.stringify(schema);
+      document.head.appendChild(script);
+    }
+  };
+
+  // Add structured data after initialization
+  requestAnimationFrame(addStructuredData);
 }
