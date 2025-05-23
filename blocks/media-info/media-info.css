@@ -1,5 +1,5 @@
 .media-info-container {
-    background-color: unset;
+    background-color: unset !important;
 }
 
 .media-info-wrapper {
