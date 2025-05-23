@@ -6,7 +6,10 @@ export default function decorate(block) {
 
   const image = document.createElement('img');
   image.src = 'https://ni.scene7.com/is/image/ni/259204_Company-Campaign_performance_graphic?scl=1';
-  image.alt = 'Company CampaignPerformance';
+  image.alt = 'Company Campaign Performance';
+  image.width = 1256;
+  image.height = 574;
+  image.loading = 'lazy';
   imageBlock.append(image);
   mediaInfoBlock.append(imageBlock);
 
