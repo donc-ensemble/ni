@@ -122,7 +122,16 @@ export default async function decorate(block) {
                     <a class="analytics-footer-link" href="//www.ni.com/en/about-ni/legal.html" rel="noopener" title="Legal information and terms">LEGAL</a>
                     <a class="analytics-footer-link" href="https://www.ni.com/en/about-ni/legal/imprint.html" rel="noopener" title="Company imprint and legal details">IMPRINT</a>
                     <a class="analytics-footer-link" href="//www.ni.com/en/about-ni/legal/privacy-statement.html" rel="noopener" title="Privacy policy and data handling">PRIVACY</a>
-                    <a id="preferences" class="ot-sdk-show-settings" href="javascript:void(0)" aria-label="Manage cookie preferences" title="Customize your cookie and privacy settings">Manage cookies</a>
+                    <a id="preferences"
+                      class="ot-sdk-show-settings"
+                      href="#"
+                      role="button"
+                      aria-label="Manage cookie preferences"
+                      title="Customize your cookie and privacy settings"
+                      onclick="event.preventDefault();">
+                      Manage cookies
+                    </a>
+
                 </nav>
                 </div>
                 <div class="all-rights" role="contentinfo"> © <time datetime="2025" class="copyright">2025</time> NATIONAL INSTRUMENTS CORP. ALL RIGHTS RESERVED.</div>
