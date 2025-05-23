@@ -104,7 +104,7 @@ export default async function decorate(block) {
                     <a class="analytics-footer-link" href="//www.ni.com/en/about-ni/legal.html" rel="noopener">LEGAL</a>
                     <a class="analytics-footer-link" href="https://www.ni.com/en/about-ni/legal/imprint.html" rel="noopener">IMPRINT</a>
                     <a class="analytics-footer-link" href="//www.ni.com/en/about-ni/legal/privacy-statement.html" rel="noopener">PRIVACY</a>
-                    <button id="preferences" class="ot-sdk-show-settings" type="button" aria-label="Manage cookie preferences">Manage cookies</button>
+                    <a id="preferences" class="ot-sdk-show-settings" href="javascript:void(0)" aria-label="Manage cookie preferences">Manage cookies</a>
                 </nav>
                 </div>
                 <div class="all-rights" role="contentinfo"> © <span class="copyright">2025</span> NATIONAL INSTRUMENTS CORP. ALL RIGHTS RESERVED.</div>
