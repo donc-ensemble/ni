@@ -12,7 +12,7 @@ export default async function decorate(block) {
 
   const footerTop = document.createElement('div');
   footerTop.classList.add('footer-top');
-  
+
   const logoWrapper = document.createElement('div');
   logoWrapper.classList.add('logo-block');
   const logo = document.createElement('img');
@@ -47,7 +47,7 @@ export default async function decorate(block) {
         linkEl.href = link;
         linkEl.innerText = title;
         linkEl.setAttribute('rel', 'noopener');
-        
+
         // Add specific aria-labels for key links
         if (title === 'NI is now part of Emerson') {
           linkEl.setAttribute('aria-label', 'Learn about NI becoming part of Emerson');
