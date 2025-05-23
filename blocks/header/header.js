@@ -60,13 +60,6 @@ function focusNavSection() {
 function toggleAllNavSections(sections, expanded = false) {
   sections.querySelectorAll('.nav-sections .default-content-wrapper > ul > li').forEach((section) => {
     section.setAttribute('aria-expanded', expanded);
-    // Add aria-controls if not present
-    const submenu = section.querySelector('ul');
-    if (submenu && !section.hasAttribute('aria-controls')) {
-      const submenuId = submenu.id || `submenu-${Math.random().toString(36).substring(2, 9)}`;
-      submenu.id = submenuId;
-      section.setAttribute('aria-controls', submenuId);
-    }
   });
 }
 
@@ -83,8 +76,7 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
   toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
-  // Update button aria-expanded state
-  button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+  button.setAttribute('aria-expanded', expanded ? 'false' : 'true'); // Sync button state with nav
 
   // enable nav dropdown keyboard accessibility
   const navDrops = navSections.querySelectorAll('.nav-drop');
@@ -92,14 +84,12 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
     navDrops.forEach((drop) => {
       if (!drop.hasAttribute('tabindex')) {
         drop.setAttribute('tabindex', 0);
-        drop.setAttribute('role', 'button'); // Add role for better screen reader understanding
         drop.addEventListener('focus', focusNavSection);
       }
     });
   } else {
     navDrops.forEach((drop) => {
       drop.removeAttribute('tabindex');
-      drop.removeAttribute('role');
       drop.removeEventListener('focus', focusNavSection);
     });
   }
@@ -136,13 +126,7 @@ export default async function decorate(block) {
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
-    if (section) {
-      section.classList.add(`nav-${c}`);
-      // Add semantic roles where appropriate
-      if (c === 'brand') {
-        section.setAttribute('role', 'banner');
-      }
-    }
+    if (section) section.classList.add(`nav-${c}`);
   });
 
   const navBrand = nav.querySelector('.nav-brand');
@@ -150,23 +134,15 @@ export default async function decorate(block) {
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
-    // Add SEO-friendly link attributes
-    brandLink.setAttribute('aria-label', 'Home');
     if (!brandLink.hasAttribute('title')) {
-      brandLink.setAttribute('title', 'Go to homepage');
+      brandLink.setAttribute('title', 'Go to homepage'); // SEO-friendly link title
     }
   }
 
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
-    navSections.setAttribute('role', 'navigation');
-    navSections.setAttribute('aria-label', 'Main menu');
-
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) {
-        navSection.classList.add('nav-drop');
-        navSection.setAttribute('role', 'none'); // Remove listitem role when it's a container
-      }
+      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
       navSection.addEventListener('click', () => {
         if (isDesktop.matches) {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
@@ -180,7 +156,7 @@ export default async function decorate(block) {
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
-  hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
+  hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation" aria-expanded="false">
       <span class="nav-hamburger-icon" aria-hidden="true"></span>
     </button>`;
   nav.prepend(hamburger);
