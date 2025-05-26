@@ -1,6 +1,10 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
 /* stylelint-disable shorthand-property-no-redundant-values */
 /* stylelint-disable declaration-empty-line-before */
+/* stylelint-disable value-keyword-case */
+/* stylelint-disable property-no-vendor-prefix */
 /* stylelint-disable declaration-block-no-duplicate-properties */
+/* stylelint-disable length-zero-no-unit */
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -21,7 +25,7 @@
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0px);
   }
 }
 
@@ -95,13 +99,18 @@
 .perspectives-carousel ul {
   display: flex;
   align-items: center;
-  touch-action: pan-y;
+  touch-action: pan-Y;
   transform-style: preserve-3d;
   transition: transform 0.3s ease;
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding: 76px 0 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 
   transition: transform cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -144,11 +153,14 @@
 
       .shape1 {
         height: 160px;
-        inset: -75px auto auto auto;
+        top: -75px;
         width: 160px;
         background: var(--ni-green);
         border-top-left-radius: 300px;
+        bottom: auto;
+        left: auto;
         position: absolute;
+        right: auto;
       }
 
       .shape2 {
@@ -220,7 +232,7 @@
     .heading {
       font-size: 14px;
       line-height: 16px;
-      font-family: "Space Mono", monospace;
+      font-family: 'Space Mono', monospace;
       margin-bottom: 64px;
       text-transform: uppercase;
       opacity: 0;
@@ -472,9 +484,12 @@
       }
 
       .shape-container .shape3 {
-        inset: 113px auto auto auto;
+        bottom: auto;
         height: 113px;
+        left: auto;
         position: absolute;
+        right: auto;
+        top: 113px;
         width: 113px;
       }
     }
