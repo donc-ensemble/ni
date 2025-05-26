@@ -12,6 +12,7 @@ import {
   loadCSS,
 } from './aem.js';
 
+import { decorateCarousel } from '../blocks/perspectives-carousel/perspectives-carousel.js';
 /**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
@@ -116,6 +117,7 @@ async function loadEager(doc) {
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
   await loadSections(main);
+  decorateCarousel();
 
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
