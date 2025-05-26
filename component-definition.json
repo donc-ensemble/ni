@@ -186,6 +186,21 @@
               }
             }
           }
+        },
+        {
+          "title": "Perspectives Carousel",
+          "id": "perspectives-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Perspectives Carousel",
+                  "model": "perspectives-carousel"
+                }
+              }
+            }
+          }
         }
       ]
     }

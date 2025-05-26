@@ -276,8 +276,12 @@
       }
     ]
   },
-    {
-  "id": "media-info",
-  "fields": []
+  {
+    "id": "media-info",
+    "fields": []
+  },
+  {
+    "id": "perspectives-carousel",
+    "fields": []
   }
 ]
