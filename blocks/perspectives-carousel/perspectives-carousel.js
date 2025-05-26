@@ -30,17 +30,17 @@ export default async function decorate(block) {
     bullets.classList.add('carousel-bullets');
     bullets.innerHTML = `<div class="bullets">
             <button class="bullet active" data-index="1" data-slide="${
-              i + 1
-            }" aria-label="Slide 1"></button>
+  i + 1
+}" aria-label="Slide 1"></button>
             <button class="bullet" data-index="2" data-slide="${
-              i + 1
-            }" aria-label="Slide 2"></button>       
+  i + 1
+}" aria-label="Slide 2"></button>       
             <button class="bullet" data-index="3" data-slide="${
-              i + 1
-            }" aria-label="Slide 3"></button>       
+  i + 1
+}" aria-label="Slide 3"></button>       
             <button class="bullet" data-index="4" data-slide="${
-              i + 1
-            }" aria-label="Slide 4"></button>
+  i + 1
+}" aria-label="Slide 4"></button>
     </div>`;
 
     const textBlock = document.createElement('div');
@@ -72,7 +72,7 @@ export default async function decorate(block) {
     slides.push(slideWrapper);
   });
 
-  slides.forEach((row, i) => {
+  slides.forEach((row) => {
     const li = document.createElement('li');
     li.className = 'card';
     while (row.firstElementChild) li.append(row.firstElementChild);
@@ -131,13 +131,14 @@ export function decorateCarousel() {
 
   function updateCounter(curr) {
     const counter = document.querySelector('.carousel-counter');
+    // eslint-disable-next-line no-nested-ternary
     const displayIndex = curr === 0 ? totalCards : curr > totalCards ? 1 : curr;
 
     counter.innerHTML = `<span class="current-index">${displayIndex
       .toString()
       .padStart(
         2,
-        '0'
+        '0',
       )}</span><span class="total-slides"> <span class="divider">/</span> <span class="total-slides">${totalCards
       .toString()
       .padStart(2, '0')}</span>`;
@@ -168,7 +169,7 @@ export function decorateCarousel() {
         carousel.style.transform = `translateX(-${
           slideWidth * currentIndex
         }px)`;
-        slides.forEach(slide => slide.classList.remove('active'));
+        slides.forEach((slide) => slide.classList.remove('active'));
 
         slides[currentIndex].classList.add('active');
       });
@@ -180,12 +181,12 @@ export function decorateCarousel() {
         carousel.style.transform = `translateX(-${
           slideWidth * currentIndex
         }px)`;
-        slides.forEach(slide => slide.classList.remove('active'));
+        slides.forEach((slide) => slide.classList.remove('active'));
 
         slides[currentIndex].classList.add('active');
       });
     } else {
-      slides.forEach(slide => slide.classList.remove('active'));
+      slides.forEach((slide) => slide.classList.remove('active'));
       slides[currentIndex].classList.add('active');
     }
   });
@@ -194,7 +195,16 @@ export function decorateCarousel() {
   prevBtn.addEventListener('click', goToPrev);
 
   // Drag functionality
+
+  function animation() {
+    if (isDragging) {
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+      requestAnimationFrame(animation);
+    }
+  }
+
   function touchStart() {
+    // eslint-disable-next-line func-names
     return function (event) {
       if (event.target.classList.contains('bullet')) {
         return;
@@ -224,9 +234,9 @@ export function decorateCarousel() {
 
   function touchEnd(event) {
     if (event.target.classList.contains('bullet')) {
-      bulletButtons.forEach(btn => btn.classList.remove('active'));
+      bulletButtons.forEach((btn) => btn.classList.remove('active'));
       const bulletIndex = +event.target.getAttribute('data-index');
-      bulletButtons.forEach(btn => {
+      bulletButtons.forEach((btn) => {
         if (+btn.getAttribute('data-index') === bulletIndex) {
           btn.classList.add('active');
         }
@@ -246,13 +256,6 @@ export function decorateCarousel() {
       goToPrev();
     } else {
       setSlide(currentIndex);
-    }
-  }
-
-  function animation() {
-    if (isDragging) {
-      carousel.style.transform = `translateX(${currentTranslate}px)`;
-      requestAnimationFrame(animation);
     }
   }
 
