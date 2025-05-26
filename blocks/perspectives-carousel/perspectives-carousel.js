@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import { sliderData } from './carouselData.js';
 
 export default async function decorate(block) {
@@ -65,6 +66,7 @@ export default async function decorate(block) {
     ctaSpan.innerText = slide.linkTitle;
     cta.append(ctaSpan);
     cta.href = slide.linkHref;
+    cta.title = `Follow this link to ${cta.innerText.toLowerCase()}`;
     cta.classList.add('cta', 'button');
     textBlock.append(cta);
 
@@ -131,7 +133,6 @@ export function decorateCarousel() {
 
   function updateCounter(curr) {
     const counter = document.querySelector('.carousel-counter');
-    // eslint-disable-next-line no-nested-ternary
     const displayIndex = curr === 0 ? totalCards : curr > totalCards ? 1 : curr;
 
     counter.innerHTML = `<span class="current-index">${displayIndex
@@ -195,16 +196,7 @@ export function decorateCarousel() {
   prevBtn.addEventListener('click', goToPrev);
 
   // Drag functionality
-
-  function animation() {
-    if (isDragging) {
-      carousel.style.transform = `translateX(${currentTranslate}px)`;
-      requestAnimationFrame(animation);
-    }
-  }
-
   function touchStart() {
-    // eslint-disable-next-line func-names
     return function (event) {
       if (event.target.classList.contains('bullet')) {
         return;
@@ -214,6 +206,7 @@ export function decorateCarousel() {
       startX = event.type.includes('mouse')
         ? event.pageX
         : event.touches[0].clientX;
+      // eslint-disable-next-line no-use-before-define
       animationID = requestAnimationFrame(animation);
       carousel.style.transition = 'none';
     };
@@ -256,6 +249,13 @@ export function decorateCarousel() {
       goToPrev();
     } else {
       setSlide(currentIndex);
+    }
+  }
+
+  function animation() {
+    if (isDragging) {
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+      requestAnimationFrame(animation);
     }
   }
 
