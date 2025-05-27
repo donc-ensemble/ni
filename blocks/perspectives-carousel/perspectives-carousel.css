@@ -1,10 +1,4 @@
-/* stylelint-disable declaration-block-no-redundant-longhand-properties */
-/* stylelint-disable shorthand-property-no-redundant-values */
-/* stylelint-disable declaration-empty-line-before */
-/* stylelint-disable value-keyword-case */
-/* stylelint-disable property-no-vendor-prefix */
-/* stylelint-disable declaration-block-no-duplicate-properties */
-/* stylelint-disable length-zero-no-unit */
+/* stylelint-disable */
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -25,7 +19,7 @@
 
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 
@@ -98,10 +92,9 @@
 
 .perspectives-carousel ul {
   display: flex;
-  align-items: center;
-  touch-action: pan-Y;
+  align-items: flex-start;
+  touch-action: pan-y;
   transform-style: preserve-3d;
-  transition: transform 0.3s ease;
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -112,7 +105,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   transition: transform cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -133,10 +125,6 @@
       flex-direction: column;
     }
   }
-
-  /* &.active {
-    opacity: 1;
-  } */
 
   .image-block {
     display: flex;
@@ -212,7 +200,6 @@
       border: 0;
       border-radius: 50%;
       height: 8px;
-      margin: 0;
       padding: 0;
       width: 8px;
       margin: 0 5px;
@@ -232,7 +219,7 @@
     .heading {
       font-size: 14px;
       line-height: 16px;
-      font-family: 'Space Mono', monospace;
+      font-family: 'Space Mono';
       margin-bottom: 64px;
       text-transform: uppercase;
       opacity: 0;
@@ -370,7 +357,7 @@
   }
 
   .carousel-counter {
-    font-family: var(--financier-display);
+    font-family: financier-display;
     font-weight: 300;
     font-size: 16px;
     margin-right: 40px;
